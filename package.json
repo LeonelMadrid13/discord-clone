@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "commit": "git-cz",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^4.23.4",
     "@radix-ui/react-slot": "^1.0.2",
     "@types/node": "20.5.9",
     "@types/react": "18.2.21",
@@ -27,5 +29,14 @@
     "tailwindcss": "3.3.3",
     "tailwindcss-animate": "^1.0.7",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "@commitlint/cz-commitlint": "^17.7.1",
+    "commitizen": "^4.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
   }
 }

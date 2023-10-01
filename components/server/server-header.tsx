@@ -10,6 +10,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
+import { useModel } from "@/hooks/use-model-store";
 
 interface ServerHeaderProps {
     server: ServerWithMembersWithProfiles;
@@ -20,6 +21,8 @@ export const ServerHeader = ({
     server,
     role
 }: ServerHeaderProps) => {
+    const { onOpen } = useModel();
+
     const isAdmin = role === MemberRole.ADMIN;
     const isMod = isAdmin || role === MemberRole.MODERATOR;
 
@@ -41,6 +44,7 @@ export const ServerHeader = ({
             >
                 {isMod && (
                     <DropdownMenuItem
+                        onClick={() => onOpen("invite", { server })}
                         className="text-indigo-600 dark:text-indigo-400 px-3 py-2 text-sm cursor-pointer"
                     >
                         Invite People

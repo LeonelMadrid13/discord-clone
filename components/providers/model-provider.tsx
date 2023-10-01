@@ -1,7 +1,9 @@
 "use client"
 
-import { CreateServerModal } from "@/components/models/create-server-model"
 import { useEffect, useState } from "react"
+
+import { CreateServerModel } from "@/components/models/create-server-model"
+import { InviteModel } from "@/components/models/invite-model"
 
 export const ModelProvider = () => {
     const [isMounted, setIsMounted] = useState(false)
@@ -14,7 +16,8 @@ export const ModelProvider = () => {
 
     return (
         <>
-            <CreateServerModal />
+            <CreateServerModel />
+            <InviteModel />
         </>
     )
 }

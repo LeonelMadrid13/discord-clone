@@ -1,9 +1,5 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@clerk/nextjs':
     specifier: ^4.23.2
@@ -59,6 +55,9 @@ dependencies:
   '@tanstack/react-query':
     specifier: ^4.33.0
     version: 4.35.3(react-dom@18.2.0)(react@18.2.0)
+  '@ts-morph/common':
+    specifier: ^0.21.0
+    version: 0.21.0
   '@types/node':
     specifier: 20.5.1
     version: 20.5.1
@@ -1620,6 +1619,15 @@ packages:
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
 
+  /@ts-morph/common@0.21.0:
+    resolution: {integrity: sha512-ES110Mmne5Vi4ypUKrtVQfXFDtCsDXiUiGxF6ILVlE90dDD4fdpC1LSjydl/ml7xJWKSDZwUYD2zkOePMSrPBA==}
+    dependencies:
+      fast-glob: 3.3.1
+      minimatch: 7.4.6
+      mkdirp: 2.1.6
+      path-browserify: 1.0.1
+    dev: false
+
   /@types/body-parser@1.19.2:
     resolution: {integrity: sha512-ALYone6pm6QmwZoAgeyNksccT9Q4AWZQ6PvfwR37GT6r6FWUPguq6sUmNGSMV2Wr761oQoBxwGGa6DR5o1DC9g==}
     dependencies:
@@ -1827,7 +1835,7 @@ packages:
       react-dropzone: ^14.2.3
       uploadthing: ^5.0.0
     dependencies:
-      '@uploadthing/shared': 5.2.1(@uploadthing/mime-types@0.2.1)(zod@3.22.2)
+      '@uploadthing/shared': 5.2.1(zod@3.22.2)
       react: 18.2.0
       react-dropzone: 14.2.3(react@18.2.0)
       tailwind-merge: 1.14.0
@@ -1847,6 +1855,18 @@ packages:
         optional: true
     dependencies:
       '@uploadthing/mime-types': 0.2.1
+      zod: 3.22.2
+    dev: false
+
+  /@uploadthing/shared@5.2.1(zod@3.22.2):
+    resolution: {integrity: sha512-ISb78wuHqU5F/7TVw/3eO0VHQdSx3qdN7I4R4knHynuWFjgJjfUsc+zAAAtpo0UZlwfjIQIv/WtSwxdlNxRPGw==}
+    peerDependencies:
+      '@uploadthing/mime-types': ^0.2.0
+      zod: ^3.21.4
+    peerDependenciesMeta:
+      '@uploadthing/mime-types':
+        optional: true
+    dependencies:
       zod: 3.22.2
     dev: false
 
@@ -2091,6 +2111,12 @@ packages:
     dependencies:
       balanced-match: 1.0.2
       concat-map: 0.0.1
+    dev: false
+
+  /brace-expansion@2.0.1:
+    resolution: {integrity: sha512-XnAIvQ8eM+kC6aULx6wuQiwVsnzsi9d3WxzV3FpWTGA19F621kwdbsAcFKXgKUHZWsy+mY6iL1sHTxWEFCytDA==}
+    dependencies:
+      balanced-match: 1.0.2
     dev: false
 
   /braces@3.0.2:
@@ -3627,8 +3653,21 @@ packages:
       brace-expansion: 1.1.11
     dev: false
 
+  /minimatch@7.4.6:
+    resolution: {integrity: sha512-sBz8G/YjVniEz6lKPNpKxXwazJe4c19fEfV2GDMX6AjFz+MX9uDWIZW8XreVhkFW3fkIdTv/gxWr/Kks5FFAVw==}
+    engines: {node: '>=10'}
+    dependencies:
+      brace-expansion: 2.0.1
+    dev: false
+
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
+    dev: false
+
+  /mkdirp@2.1.6:
+    resolution: {integrity: sha512-+hEnITedc8LAtIP9u3HJDFIdcLV2vXP33sqLLIzkv1Db1zO/1OxbvYf0Y1OC/S/Qo5dxHXepofhmxL02PsKe+A==}
+    engines: {node: '>=10'}
+    hasBin: true
     dev: false
 
   /ms@2.1.2:
@@ -3851,6 +3890,10 @@ packages:
     engines: {node: '>=6'}
     dependencies:
       callsites: 3.1.0
+    dev: false
+
+  /path-browserify@1.0.1:
+    resolution: {integrity: sha512-b7uo2UCUOYZcnF/3ID0lulOJi/bafxa1xPe7ZPsammBSpjSWQkjNxlt635YGS2MiR9GjvuXCtz2emr3jbsz98g==}
     dev: false
 
   /path-exists@4.0.0:
@@ -4977,3 +5020,7 @@ packages:
       react: 18.2.0
       use-sync-external-store: 1.2.0(react@18.2.0)
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false

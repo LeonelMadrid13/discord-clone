@@ -39,9 +39,9 @@ create an end-to-end fullstack and real-time discord clone, all with servers, ch
 - [x] Invitations
 - [x] Server setting
 - [x] Manage Members
-- [ ] Channel creation
-- [ ] Delete & Leave server
-- [ ] Search Server Model
+- [x] Channel creation
+- [x] Delete & Leave server
+- [x] Search Server Model
 - [ ] Server channel list
 - [ ] Edit channels
 - [ ] Channel ID page

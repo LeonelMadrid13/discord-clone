@@ -42,11 +42,11 @@ create an end-to-end fullstack and real-time discord clone, all with servers, ch
 - [x] Channel creation
 - [x] Delete & Leave server
 - [x] Search Server Model
-- [ ] Server channel list
-- [ ] Edit channels
-- [ ] Channel ID page
-- [ ] Chat Header
-- [ ] Prisma Schema completion
+- [x] Server channel list
+- [x] Edit channels
+- [x] Channel ID page
+- [x] Chat Header
+- [x] Prisma Schema completion
 - [ ] Conversations Setup
 - [ ] Socket IO setup
 - [ ] Messages API

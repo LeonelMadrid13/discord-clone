@@ -19,5 +19,5 @@ const UserAvatar = ({
         </Avatar>
      );
 }
- 
+
 export default UserAvatar;

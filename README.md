@@ -47,11 +47,11 @@ create an end-to-end fullstack and real-time discord clone, all with servers, ch
 - [x] Channel ID page
 - [x] Chat Header
 - [x] Prisma Schema completion
-- [ ] Conversations Setup
-- [ ] Socket IO setup
-- [ ] Messages API
-- [ ] Message Attachment
-- [ ] Emoji bar
+- [x] Conversations Setup
+- [x] Socket IO setup
+- [x] Messages API
+- [x] Message Attachment
+- [x] Emoji bar
 - [ ] Chat components
   - [ ] Input
   - [ ] Messages

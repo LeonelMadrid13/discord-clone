@@ -3,6 +3,8 @@
 
 create an end-to-end fullstack and real-time discord clone, all with servers, channels, video calls, audio calls, editing and deleting messages as well as member roles.
 
+Live Demo: https://discord-clone-fawn-nine.vercel.app/
+
 ## Key Features
 
 - Real-time messaging using Socket.io
@@ -52,13 +54,13 @@ create an end-to-end fullstack and real-time discord clone, all with servers, ch
 - [x] Messages API
 - [x] Message Attachment
 - [x] Emoji bar
-- [ ] Chat components
-  - [ ] Input
-  - [ ] Messages
-  - [ ] Item
-- [ ] Delete Message
-- [ ] Chat hook
-  - [ ] Socket
-  - [ ] Scroll
-- [ ] Direct Messages
-- [ ] Video calls
+- [x] Chat components
+  - [x] Input
+  - [x] Messages
+  - [x] Item
+- [x] Delete Message
+- [x] Chat hook
+  - [x] Socket
+  - [x] Scroll
+- [x] Direct Messages
+- [x] Video calls
